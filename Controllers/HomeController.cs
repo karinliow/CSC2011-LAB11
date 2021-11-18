@@ -15,6 +15,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        string name = "karin";
+        ViewBag.Message = "hello " + name;
         return View();
     }
 
